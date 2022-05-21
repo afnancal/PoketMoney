@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_body_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.details.DetailsActivity">
+
+        <FrameLayout
+            android:id="@+id/fl_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include
+                android:id="@+id/include_toolbar_details"
+                layout="@layout/toolbar" />
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fl_details">
+
+            <RelativeLayout
+                android:id="@+id/rl_main_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:background="@color/white"
+                android:paddingBottom="150dp"
+                android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_profit_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/tv_profit1_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Your Profit:"
+                            tools:ignore="SpUsage" />
+
+                        <TextView
+                            android:id="@+id/tv_profit2_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/yellow"
+                            android:textSize="16dp"
+                            tools:ignore="SpUsage" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_CS_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cv_profit_details"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    tools:ignore="SpUsage" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_banner_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_CS_mobile"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_banner_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="145dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/banner1"
+                        tools:ignore="ContentDescription" />
+                </androidx.cardview.widget.CardView>
+
+                <include
+                    android:id="@+id/include_howWork_webView_offer"
+                    layout="@layout/webview_offer_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cv_banner_details"
+                    android:layout_marginTop="-10dp" />
+
+                <include
+                    android:id="@+id/include_terms_webView_offer"
+                    layout="@layout/webview_offer_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/include_howWork_webView_offer"
+                    android:layout_marginTop="-10dp" />
+
+                <include
+                    android:id="@+id/include_desc_webView_offer"
+                    layout="@layout/webview_offer_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/include_terms_webView_offer" />
+
+                <include
+                    android:id="@+id/include_feature_webView_offer"
+                    layout="@layout/webview_offer_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/include_desc_webView_offer"
+                    android:layout_marginTop="-10dp" />
+
+                <include
+                    android:id="@+id/include_instruction_webView_offer"
+                    layout="@layout/webview_offer_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/include_feature_webView_offer"
+                    android:layout_marginTop="-10dp" />
+
+                <include
+                    android:id="@+id/include_process_webView_offer"
+                    layout="@layout/webview_offer_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/include_instruction_webView_offer"
+                    android:layout_marginTop="-10dp" />
+
+                <include
+                    android:id="@+id/include_documents_webView_offer"
+                    layout="@layout/webview_offer_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/include_process_webView_offer"
+                    android:layout_marginTop="-10dp" />
+
+                <include
+                    android:id="@+id/include_faqs_webView_offer"
+                    layout="@layout/webview_offer_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/include_documents_webView_offer"
+                    android:layout_marginTop="-10dp" />
+
+                <!--<androidx.cardview.widget.CardView
+                    android:id="@+id/cv_howTo_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/include_desc_webView_offer"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-15dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/light_yellow"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/tv_howTo_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="How to Achieve &amp; Earn"
+                            android:textColor="@color/purple_dark"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_howTo_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_howTo_details"
+                            tools:itemCount="4"
+                            tools:listitem="@layout/list_view_design" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>-->
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_share_details"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_ripple_yellow"
+            android:text="Share to customer"
+            android:textColor="@color/purple_dark"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <RelativeLayout
+            android:id="@+id/rl_container_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="@+id/fl_details"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

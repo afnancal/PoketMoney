@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_body_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:padding="30dp"
+        tools:context=".ui.login.LoginActivity">
+
+        <ImageView
+            android:id="@+id/iv_logo_mobile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_earning"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif_savings_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-32dp"
+            android:layout_marginTop="-30dp"
+            android:background="#00FCFCFC"
+            android:src="@drawable/savings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo_mobile" />
+
+
+        <TextView
+            android:id="@+id/tv_body1_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/body1_mobile"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_body2_mobile"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:id="@+id/tv_body2_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="55dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/body2_mobile"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/rl_number_mobile"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="SpUsage" />
+
+        <RelativeLayout
+            android:id="@+id/rl_number_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="55dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_phone_mobile"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/ic_mobile"
+                tools:ignore="ContentDescription" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_number_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/btn_go_mobile"
+                android:layout_toEndOf="@+id/iv_phone_mobile"
+                android:paddingStart="0dp"
+                android:paddingEnd="7dp"
+                android:theme="@style/TextLabel"
+                app:errorTextAppearance="@style/ErrorAppearance">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_number_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mobile"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:minLines="1"
+                    android:textColor="@color/white"
+                    tools:ignore="Autofill" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_go_mobile"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_ripple"
+                android:text="Go"
+                android:textColor="@color/purple_dark" />
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

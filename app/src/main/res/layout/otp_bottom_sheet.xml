@@ -1,0 +1,83 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_bottom_sheet"
+    android:focusable="false"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/otp_text1_bottomSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingTop="20dp"
+        android:text="@string/otp_text1"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@id/otp_text2_bottomSheet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/otp_text2_bottomSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_horizontal"
+        android:text="@string/otp_text2"
+        android:textColor="@color/grey"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@id/otpTV_bottomSheet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.androidutillibrary.OtpView.OtpTextView
+        android:id="@+id/otpTV_bottomSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        app:bar_enabled="true"
+        app:bar_height="2dp"
+        app:bar_margin_bottom="0dp"
+        app:bar_margin_left="7dp"
+        app:bar_margin_right="7dp"
+        app:bar_success_color="@color/blue"
+        app:height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:length="4"
+        app:otp=""
+        app:otp_text_size="27dp"
+        app:width="55dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialBtn_verify_bottomSheet"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_ripple"
+        android:text="@string/verify"
+        android:textColor="@color/white"
+        android:theme="@style/Theme.PoketMoney"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/otpTV_bottomSheet" />
+
+    <TextView
+        android:id="@+id/tv_countdown_bottomSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingBottom="20dp"
+        android:textColor="@color/purple_dark"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/materialBtn_verify_bottomSheet" />
+</androidx.constraintlayout.widget.ConstraintLayout>

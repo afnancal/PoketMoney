@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Poket Money</string>
+    <string name="body1_mobile">Mobile Number is \nRequired to Continue</string>
+    <string name="body2_mobile">Login using the verification code received on your phone and it is done!</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email address</string>
+    <string name="referral_code">Referral Code</string>
+    <string name="address">Address</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="pincode">Enter Pincode</string>
+    <string name="verify">Verify OTP</string>
+    <string name="otp_text1">Make Sure It\'s You</string>
+    <string name="otp_text2">Enter the 4 digit code sent to your mobile number 98******10</string>
+
+    <string name="advisor">You are now a Poket Money Advisor</string>
+    <string name="content">Add leads &amp; start your Earnings, Earn more by sharing with friends &amp; build own team.</string>
+</resources>

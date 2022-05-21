@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".ui.signup.SignupActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_body_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_body_signup"
+                    android:layout_width="360dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:background="@drawable/signup_bg">
+
+                        <com.androidutillibrary.CircleImageView
+                            android:id="@+id/civ_signup"
+                            android:layout_width="144dp"
+                            android:layout_height="144dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="47dp"
+                            app:srcCompat="@drawable/ic_profile_bg" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/civ_signup"
+                            android:layout_marginStart="193dp"
+                            android:layout_marginTop="-30dp"
+                            app:cardBackgroundColor="@android:color/transparent"
+                            app:cardCornerRadius="40dp"
+                            app:cardElevation="16dp">
+
+                            <ImageView
+                                android:id="@+id/iv_camera_signup"
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                app:srcCompat="@drawable/ic_camera"
+                                tools:ignore="ContentDescription" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/tv_name_signup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="230dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Your Full Name"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/aciv_email_signup"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:layout_below="@+id/tv_name_signup"
+                            android:layout_marginStart="57dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginEnd="12dp"
+                            android:src="@drawable/ic_email" />
+
+                        <TextView
+                            android:id="@+id/tv_email_signup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_name_signup"
+                            android:layout_marginTop="20dp"
+                            android:layout_toEndOf="@+id/aciv_email_signup"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="xxxxxxxxx@xxxxx.xxx"
+                            android:textColor="@color/grey"
+                            android:textSize="15dp" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/aciv_phone_signup"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:layout_below="@+id/aciv_email_signup"
+                            android:layout_marginStart="57dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginEnd="11dp"
+                            android:src="@drawable/ic_phone" />
+
+                        <TextView
+                            android:id="@+id/tv_phone_signup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/aciv_email_signup"
+                            android:layout_marginTop="9dp"
+                            android:layout_toEndOf="@+id/aciv_phone_signup"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="+91 9477992616"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:id="@+id/rl_progressStatus_signup"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cv_body_signup"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/aciv_singleUser_signup"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/ic_single_user_color" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/aciv_dashed1_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/aciv_multipleUser_signup"
+                        android:layout_toEndOf="@+id/aciv_singleUser_signup"
+                        android:src="@drawable/ic_dashed_white" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/aciv_multipleUser_signup"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_multiple_user" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/aciv_dashed2_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/aciv_location_signup"
+                        android:layout_toEndOf="@+id/aciv_multipleUser_signup"
+                        android:src="@drawable/ic_dashed_white" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/aciv_location_signup"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_location" />
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_form_signup"
+                    android:layout_width="360dp"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/rl_progressStatus_signup"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_singleUser_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="20dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/til_firstName_signup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="7dp"
+                            android:theme="@style/TextLabelDark"
+                            app:errorTextAppearance="@style/ErrorAppearance">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/tiet_firstName_signup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/first_name"
+                                android:imeOptions="actionNext"
+                                android:inputType="textCapWords"
+                                android:minLines="1"
+                                android:textColor="@color/black"
+                                tools:ignore="Autofill" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/til_lastName_signup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/til_firstName_signup"
+                            android:layout_marginTop="10dp"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="7dp"
+                            android:theme="@style/TextLabelDark"
+                            app:errorTextAppearance="@style/ErrorAppearance">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/tiet_lastName_signup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/last_name"
+                                android:imeOptions="actionDone"
+                                android:inputType="textCapWords"
+                                android:minLines="1"
+                                android:textColor="@color/black"
+                                tools:ignore="Autofill" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_multiUser_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="20dp"
+                        android:visibility="gone">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/til_email_signup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="7dp"
+                            android:theme="@style/TextLabelDark"
+                            app:errorTextAppearance="@style/ErrorAppearance">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/tiet_email_signup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/email"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:minLines="1"
+                                android:textColor="@color/black"
+                                tools:ignore="Autofill" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/til_referralCode_signup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/til_email_signup"
+                            android:layout_marginTop="10dp"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="7dp"
+                            android:theme="@style/TextLabelDark"
+                            app:errorTextAppearance="@style/ErrorAppearance">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/tiet_referralCode_signup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/referral_code"
+                                android:imeOptions="actionDone"
+                                android:inputType="textCapCharacters"
+                                android:minLines="1"
+                                android:textColor="@color/black"
+                                tools:ignore="Autofill" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_location_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="20dp"
+                        android:visibility="gone">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/til_address_signup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="7dp"
+                            android:theme="@style/TextLabelDark"
+                            app:errorTextAppearance="@style/ErrorAppearance">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/tiet_address_signup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/address"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:minLines="1"
+                                android:textColor="@color/black"
+                                tools:ignore="Autofill" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/til_pincode_signup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/til_address_signup"
+                            android:layout_marginTop="10dp"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="7dp"
+                            android:theme="@style/TextLabelDark"
+                            app:errorTextAppearance="@style/ErrorAppearance">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/tiet_pincode_signup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/pincode"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:maxLength="6"
+                                android:minLines="1"
+                                android:textColor="@color/black"
+                                tools:ignore="Autofill" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/btn_next_signup"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/cv_form_signup"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/btn_ripple"
+                    android:text="Next" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_success_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cv_body_signup"
+                    android:layout_marginTop="-30dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gif_confetti_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:src="@drawable/confetti" />
+
+                    <TextView
+                        android:id="@+id/tv_congrats_signup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Congratulations!"
+                        android:textColor="@color/yellow"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:id="@+id/tv_advisor_signup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_congrats_signup"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/advisor"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/tv_content_signup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_advisor_signup"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center_horizontal"
+                        android:text="@string/content"
+                        android:textColor="#E9F5FF"
+                        android:textSize="14dp" />
+
+                    <Button
+                        android:id="@+id/btn_share_signup"
+                        android:layout_width="130dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/tv_content_signup"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/btn_ripple_color"
+                        android:text="Share"
+                        android:textAllCaps="false"
+                        android:textColor="@color/yellow" />
+
+                    <Button
+                        android:id="@+id/btn_earn_signup"
+                        android:layout_width="130dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/tv_content_signup"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/btn_ripple"
+                        android:text="Start Earning"
+                        android:textAllCaps="false" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
