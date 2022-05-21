@@ -38,11 +38,11 @@ In the past, Retrofit relied on the GSON library to serialize and deserialize JS
 Poket Money is an online income app that requires no investment and is one of the top work from home options in India. Join the Poket Money App if you are looking for a part-time or full-time career Online. Over 400k people have installed Poket Money App and filled their pockets with Money.
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/afnancal/PoketMoney/blob/master/screenshots/1app.png)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/afnancal/PoketMoney/blob/master/screenshots/2app.png)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/afnancal/PoketMoney/blob/master/screenshots/3app.png)
 
 
 
