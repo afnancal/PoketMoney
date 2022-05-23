@@ -17,8 +17,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.Snackbar
 import com.poketmoney.R
 import com.poketmoney.databinding.ActivityReferralBinding
-import com.poketmoney.extensions.NetworkUtils
-import com.poketmoney.extensions.SharedPreference
+import com.poketmoney.di.NetworkUtils
+import com.poketmoney.di.SharedPreference
 import com.poketmoney.utils.CommonUtils
 
 

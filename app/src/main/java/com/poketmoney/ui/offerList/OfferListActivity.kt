@@ -12,8 +12,8 @@ import com.google.android.material.snackbar.Snackbar
 import com.poketmoney.R
 import com.poketmoney.databinding.ActivityOfferListBinding
 import com.poketmoney.utils.CommonUtils
-import com.poketmoney.extensions.NetworkUtils
-import com.poketmoney.extensions.SharedPreference
+import com.poketmoney.di.NetworkUtils
+import com.poketmoney.di.SharedPreference
 
 /**
  * Bismillah

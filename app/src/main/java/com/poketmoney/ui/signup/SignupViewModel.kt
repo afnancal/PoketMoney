@@ -10,7 +10,7 @@ import com.poketmoney.api.models.entities.User
 import com.poketmoney.api.models.responses.LoginResponse
 import com.poketmoney.api.models.responses.Offer18SignupResponse
 import com.poketmoney.api.models.responses.SignupResponse
-import com.poketmoney.extensions.AppConstants
+import com.poketmoney.di.AppConstants
 import com.poketmoney.utils.CommonUtils
 import kotlinx.coroutines.launch
 import retrofit2.Call

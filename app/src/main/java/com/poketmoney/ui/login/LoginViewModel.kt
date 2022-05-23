@@ -7,8 +7,8 @@ import androidx.lifecycle.viewModelScope
 import com.poketmoney.api.PoketMoneyClient
 import com.poketmoney.api.models.responses.LoginResponse
 import com.poketmoney.api.models.responses.ResendOtpResponse
-import com.poketmoney.extensions.AppConstants
-import com.poketmoney.extensions.SharedPreference
+import com.poketmoney.di.AppConstants
+import com.poketmoney.di.SharedPreference
 import com.poketmoney.utils.CommonUtils
 import kotlinx.coroutines.launch
 

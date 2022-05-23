@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.poketmoney.R
 import com.poketmoney.api.models.entities.Referral
 import com.poketmoney.databinding.ReferItemDesignBinding
-import com.poketmoney.extensions.loadImage
+import com.poketmoney.di.loadImage
 
 /**
  * Bismillah

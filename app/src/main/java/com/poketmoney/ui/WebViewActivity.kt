@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.poketmoney.R
 import com.poketmoney.databinding.ActivityWebviewBinding
-import com.poketmoney.extensions.SharedPreference
+import com.poketmoney.di.SharedPreference
 import com.poketmoney.ui.details.DetailsActivity
 import com.poketmoney.ui.offerList.OfferListActivity
 import com.poketmoney.ui.referral.ReferralActivity

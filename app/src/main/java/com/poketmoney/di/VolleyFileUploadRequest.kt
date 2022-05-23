@@ -1,4 +1,4 @@
-package com.poketmoney.extensions
+package com.poketmoney.di
 
 import com.android.volley.*
 import com.android.volley.toolbox.HttpHeaderParser

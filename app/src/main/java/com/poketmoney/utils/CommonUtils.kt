@@ -13,8 +13,8 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import androidx.appcompat.app.AlertDialog
 import com.poketmoney.R
-import com.poketmoney.extensions.AppConstants
-import com.poketmoney.extensions.SharedPreference
+import com.poketmoney.di.AppConstants
+import com.poketmoney.di.SharedPreference
 import com.poketmoney.ui.login.LoginActivity
 import java.io.ByteArrayOutputStream
 import java.io.IOException

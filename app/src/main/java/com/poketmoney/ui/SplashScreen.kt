@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.poketmoney.R
 import com.poketmoney.ui.login.LoginActivity
-import com.poketmoney.extensions.SharedPreference
+import com.poketmoney.di.SharedPreference
 
 /**
  * Bismillah

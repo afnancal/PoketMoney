@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.poketmoney.R
 import com.poketmoney.api.models.entities.OfferDetail
 import com.poketmoney.databinding.CvOfferDesignBinding
-import com.poketmoney.extensions.loadImage
+import com.poketmoney.di.loadImage
 import com.poketmoney.ui.details.DetailsActivity
 
 /**

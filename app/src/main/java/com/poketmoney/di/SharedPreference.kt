@@ -1,4 +1,4 @@
-package com.poketmoney.extensions
+package com.poketmoney.di
 
 import android.content.Context
 import android.content.SharedPreferences

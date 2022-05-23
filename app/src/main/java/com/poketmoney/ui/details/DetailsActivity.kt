@@ -12,9 +12,9 @@ import androidx.core.text.HtmlCompat
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.snackbar.Snackbar
 import com.poketmoney.databinding.ActivityDetailsBinding
-import com.poketmoney.extensions.NetworkUtils
-import com.poketmoney.extensions.SharedPreference
-import com.poketmoney.extensions.loadImage
+import com.poketmoney.di.NetworkUtils
+import com.poketmoney.di.SharedPreference
+import com.poketmoney.di.loadImage
 import com.poketmoney.utils.CommonUtils
 
 

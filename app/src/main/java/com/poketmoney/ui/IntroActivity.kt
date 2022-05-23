@@ -12,7 +12,7 @@ import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
 import com.poketmoney.R
 import com.poketmoney.databinding.ActivityIntroBinding
-import com.poketmoney.extensions.SharedPreference
+import com.poketmoney.di.SharedPreference
 import com.poketmoney.ui.login.LoginActivity
 import com.poketmoney.ui.slider.SliderAdapter
 import com.poketmoney.ui.slider.SliderItems

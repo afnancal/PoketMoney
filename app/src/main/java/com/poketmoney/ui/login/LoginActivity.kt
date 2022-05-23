@@ -25,8 +25,8 @@ import com.poketmoney.databinding.ActivityMobileBinding
 import com.poketmoney.ui.WebViewActivity
 import com.poketmoney.ui.signup.SignupActivity
 import com.poketmoney.utils.CommonUtils
-import com.poketmoney.extensions.NetworkUtils
-import com.poketmoney.extensions.SharedPreference
+import com.poketmoney.di.NetworkUtils
+import com.poketmoney.di.SharedPreference
 import com.poketmoney.utils.Validation
 import java.lang.ref.WeakReference
 import kotlin.math.max

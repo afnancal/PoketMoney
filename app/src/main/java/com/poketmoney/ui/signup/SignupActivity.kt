@@ -24,8 +24,8 @@ import com.poketmoney.R
 import com.poketmoney.api.models.entities.User
 import com.poketmoney.api.models.responses.Offer18SignupResponse
 import com.poketmoney.databinding.ActivitySignupBinding
-import com.poketmoney.extensions.NetworkUtils
-import com.poketmoney.extensions.SharedPreference
+import com.poketmoney.di.NetworkUtils
+import com.poketmoney.di.SharedPreference
 import com.poketmoney.ui.WebViewActivity
 import com.poketmoney.utils.CommonUtils
 import com.poketmoney.utils.Validation
